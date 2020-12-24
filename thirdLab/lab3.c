@@ -5,8 +5,6 @@
 
 #define N 10
 
-int A[N][N], B[N][N], C[N][N];
-
 void init_matrix(int m[N][N])
 {
   for (int i = 0; i < N; i++) {
@@ -29,7 +27,7 @@ void print_matrix(int m[N][N])
 
 int main(int argc, char *argv[])
 {
-  int proc_rank, proc_count, i, size;
+  int proc_rank, proc_count, i, size, A[N][N], B[N][N], C[N][N];
   size = N*N;
   MPI_Status status;
   
